@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Food, LLC</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- Bootstrap 5 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- My CSS file-->
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+
+        <header>
+            <!-- Not fixed; scrolls away as required -->
+            <nav id="header-nav" class="navbar navbar-light">
+                <div class="container-fluid">
+                <a class="navbar-brand" href="#">Food, LLC</a>
+
+                <!-- Mobile-only toggler (hidden ≥ sm) -->
+                <button class="navbar-toggler d-sm-none" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#mobileMenu"
+                        aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                </div>
+            </nav>
+
+            <!-- Mobile dropdown: full width, distinct background, visible only on xs -->
+            <div id="mobileMenu" class="collapse d-sm-none mobile-menu">
+                <ul class="list-unstyled m-0">
+                    <li><a class="menu-link" href="#">Chicken</a></li>
+                    <li><a class="menu-link" href="#">Beef</a></li>
+                    <li><a class="menu-link" href="#">Sushi</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+        <!-- Heading centered with Bootstrap class -->
+        <h2 class="py-3">Our Menu</h2>
+
+        <!-- Full width “minus some margins”: use container-fluid + padded wrapper -->
+        <div class="container-fluid px-0">           <!-- no container padding -->
+            <div class="row gx-0">                      <!-- no horizontal gutters -->
+                <div class="col-12">                      <!-- required grid column -->
+                <!-- apply margins to THIS gray block -->
+                <section class="tall-section mx-5 mx-sm-4 mx-md-3 mx-lg-2">
+                    <h3 class="py-1">Chicken</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit iure molestias harum deserunt tenetur, alias veniam rem repellendus. Eum reprehenderit doloremque veritatis atque recusandae ab officia vitae? Error, dignissimos quo.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea dolores itaque amet eaque eum vitae obcaecati! Inventore dolores distinctio quae illo. Vero quo accusamus alias vel. Eum itaque sapiente provident?</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit labore doloremque rem dolor molestias, repellat expedita, nobis nostrum ipsum nesciunt aliquid quae suscipit mollitia blanditiis. Eius provident deserunt aspernatur hic?</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, minus officia, quia obcaecati eius cumque accusantium earum expedita dolores harum cupiditate nemo dignissimos, aliquid impedit reiciendis? Inventore ut dolorem molestiae.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero similique officia cumque molestias laboriosam. Sequi adipisci similique nemo magnam possimus saepe sed quia voluptatum perferendis dicta, laboriosam dolorum beatae consequatur.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad molestias eaque ut eos omnis architecto dolores tempora eius reiciendis provident quasi delectus aliquid odio perspiciatis blanditiis alias atque, quas odit!</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut voluptatibus tempore cumque illo! Repellat culpa fugiat est id! Odit expedita officiis, iste quis libero eligendi a deleniti saepe illum minima.</p>
+                </section>
+                </div>
+            </div>
+            </div>
+        </main>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
